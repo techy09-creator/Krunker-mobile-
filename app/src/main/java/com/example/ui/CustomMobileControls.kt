@@ -40,6 +40,8 @@ import androidx.compose.material.icons.filled.Sync
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -284,25 +286,18 @@ fun CustomMobileControls(
                         )
                     }
 
-                    // Opacity Cycler (60% -> 80% -> 100%)
-                    Button(
-                        onClick = {
-                            val nextOpacity = when {
-                                buttonOpacity < 0.7f -> 0.80f
-                                buttonOpacity < 0.9f -> 1.0f
-                                else -> 0.60f
-                            }
-                            buttonOpacity = nextOpacity
-                            prefs.edit().putFloat(KEY_OPACITY, nextOpacity).apply()
-                        },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF202020), contentColor = Color.White),
-                        border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.35f)),
-                        shape = RoundedCornerShape(8.dp),
-                        modifier = Modifier.height(34.dp)
+                    // Opacity Adjustable Slider Bar (0% to 100%)
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .height(34.dp)
+                            .background(Color(0xFF202020), RoundedCornerShape(8.dp))
+                            .border(1.dp, Color.White.copy(alpha = 0.35f), RoundedCornerShape(8.dp))
+                            .padding(start = 8.dp, end = 4.dp)
                     ) {
                         Icon(
                             imageVector = Icons.Default.Opacity,
-                            contentDescription = null,
+                            contentDescription = "Opacity",
                             tint = Color.White,
                             modifier = Modifier.size(16.dp)
                         )
@@ -310,7 +305,25 @@ fun CustomMobileControls(
                         Text(
                             text = "${(buttonOpacity * 100).roundToInt()}%",
                             fontSize = 11.sp,
-                            color = Color.White
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White,
+                            modifier = Modifier.width(36.dp)
+                        )
+                        Slider(
+                            value = buttonOpacity,
+                            onValueChange = { newOpacity ->
+                                buttonOpacity = newOpacity
+                                prefs.edit().putFloat(KEY_OPACITY, newOpacity).apply()
+                            },
+                            valueRange = 0.0f..1.0f,
+                            modifier = Modifier
+                                .width(100.dp)
+                                .height(34.dp),
+                            colors = SliderDefaults.colors(
+                                thumbColor = Color.White,
+                                activeTrackColor = Color.White,
+                                inactiveTrackColor = Color.White.copy(alpha = 0.25f)
+                            )
                         )
                     }
 
