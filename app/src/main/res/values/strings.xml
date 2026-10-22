@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Krunker</string>
+    <string name="game_url">https://krunker.io</string>
+    <string name="loading_game">Loading Krunker.io…</string>
+    <string name="connection_error_title">Connection Lost</string>
+    <string name="connection_error_desc">Could not reach Krunker servers. Please check your internet connection.</string>
+    <string name="retry_button">Reconnect</string>
+    <string name="exit_dialog_title">Exit Krunker?</string>
+    <string name="exit_dialog_desc">Are you sure you want to leave the game? Any unsaved match progress will be lost.</string>
+    <string name="exit_confirm">Exit Game</string>
+    <string name="exit_cancel">Keep Playing</string>
+    <string name="toggle_hud">Game Menu</string>
+    <string name="reload_page">Reload</string>
+    <string name="toggle_fullscreen">Full Screen</string>
+    <string name="rotate_screen">Flip Screen</string>
+    <string name="desktop_mode">Desktop View</string>
+    <string name="mobile_mode">Mobile View</string>
+</resources>

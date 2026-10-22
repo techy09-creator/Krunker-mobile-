@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Spray Can Body & Nozzle -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7,10h6c1.1,0 2,0.9 2,2v8c0,1.1 -0.9,2 -2,2H7c-1.1,0 -2,-0.9 -2,-2v-8c0,-1.1 0.9,-2 2,-2z M8,7h4v2H8V7z M9,4h2v2H9V4z" />
+    <!-- Spray Mist / Cloud -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M16.5,5.5a1.5,1.5 0,1 0,3 0a1.5,1.5 0,1 0,-3 0z M19.5,9.5a1.2,1.2 0,1 0,2.4 0a1.2,1.2 0,1 0,-2.4 0z M16,11a1,1 0,1 0,2 0a1,1 0,1 0,-2 0z M14,6.5a1,1 0,1 0,2 0a1,1 0,1 0,-2 0z M19,3a1,1 0,1 0,2 0a1,1 0,1 0,-2 0z" />
+</vector>

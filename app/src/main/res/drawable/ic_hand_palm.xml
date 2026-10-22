@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Open Hand Palm Icon (M1 Action) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M2.5,12.5c0,-0.83 0.67,-1.5 1.5,-1.5s1.5,0.67 1.5,1.5V16h1V6.5c0,-0.83 0.67,-1.5 1.5,-1.5s1.5,0.67 1.5,1.5V16h1V4c0,-0.83 0.67,-1.5 1.5,-1.5s1.5,0.67 1.5,1.5V16h1V6c0,-0.83 0.67,-1.5 1.5,-1.5s1.5,0.67 1.5,1.5V16h1v-4c0,-0.83 0.67,-1.5 1.5,-1.5s1.5,0.67 1.5,1.5v6c0,4.42 -3.58,8 -8,8s-8,-3.58 -8,-8V12.5z" />
+</vector>

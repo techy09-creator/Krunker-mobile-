@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Bold High-Visibility Up Arrow for Jump -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,3 L4,11 L8,11 L8,21 L16,21 L16,11 L20,11 Z" />
+</vector>

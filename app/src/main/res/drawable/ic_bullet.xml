@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Sleek Rifle Bullet -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,2 C10.8,3.5 10,7 10,10 L10,19 C10,19.6 10.4,20 11,20 L13,20 C13.6,20 14,19.6 14,19 L14,10 C14,7 13.2,3.5 12,2 Z M9.5,20.5 C9.5,21.3 10.2,22 11,22 L13,22 C13.8,22 14.5,21.3 14.5,20.5 L14.5,20 L9.5,20 Z" />
+    <!-- Bullet rim grooves -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M10,16 L14,16 L14,17 L10,17 Z" />
+</vector>

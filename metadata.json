@@ -1,0 +1,6 @@
+{
+  "name": "Krunker",
+  "description": "Full-screen Krunker.io client with notch elimination, edge-to-edge gaming canvas, and hardware-accelerated WebGL performance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
